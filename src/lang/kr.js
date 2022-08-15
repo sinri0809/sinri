@@ -3,9 +3,3 @@ const kr = {
   "lbBtnAll": "전체보기",
 };
 
-
-const t = (attr) => {
-  return kr[attr];
-};
-
-export { t }
