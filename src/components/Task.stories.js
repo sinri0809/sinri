@@ -4,7 +4,7 @@ import Task from './Task';
 
 export default {
   component: Task, // 해당 컴포넌트
-  title: 'Task', // 컴포넌트를 참조하는 방법
+  title: 'components/Task', // 컴포넌트를 참조하는 방법
 };
 
 // 1. component
