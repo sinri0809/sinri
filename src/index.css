@@ -276,6 +276,9 @@ textarea {
   line-height: 20px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 10px;
+  align-items: center;
   height: 3rem;
   width: 100%;
   background: white;
