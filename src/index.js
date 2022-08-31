@@ -1,3 +1,4 @@
+import printMe from './print';
 import './style.css';
 import Img from './profile.png';
 
@@ -12,6 +13,13 @@ function component() {
   myProfile.src = Img;
 
   element.appendChild(myProfile);
+
+
+  const btn = document.createElement('button');
+  btn.innerHTML = 'click me and check consolessssss';
+  btn.onclick = printMe;
+
+  element.appendChild(btn);
 
   return element;
 }
