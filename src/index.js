@@ -16,7 +16,7 @@ function component() {
 
 
   const btn = document.createElement('button');
-  btn.innerHTML = 'click me and check consolessssss';
+  btn.innerHTML = 'click me and check consol';
   btn.onclick = printMe;
 
   element.appendChild(btn);
