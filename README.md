@@ -1,6 +1,6 @@
 # jest practice
 
->> [jest docs](https://jestjs.io/docs/getting-started)
+> [jest docs](https://jestjs.io/docs/getting-started)
 
 ### install
 ```
@@ -64,6 +64,22 @@ return expect()...
 // or
 return expect(promisefunction).resolves.toBe..
 return expect(promisefunction).rejects.toBe..
+```
+### teardown
+```
+afterAll()
+beforeAll()
+
+afterEach()
+beforeEach() // test case마다 실행
+
+describe("", () => {
+  // test scope 
+})
+```
+```
+test.only() // 해당 test 이외에 다른 테스트는 skip
+test.skip() // 해당 test skip
 ```
 
 ---
