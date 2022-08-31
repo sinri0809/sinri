@@ -82,7 +82,25 @@ test.only() // 해당 test 이외에 다른 테스트는 skip
 test.skip() // 해당 test skip
 ```
 
+### mock
+> 작업에 따라서는 test 코드가 제품 코드보다 많아지는 경우가 발생할 수 있거나, 외부 요인에 의한 영향이 커질 수 있다. 
+
+-> mock function: 테스트 하기 위해 흉내만 내는 함수  
+`jest.fn()`  
+
 ---
+
+```
+import { waitFor, fireEvent, render, screen } from '@testing-library/react';
+
+```
+### snapshots
+```
+toMatchSnapshot()
+```
+---
+
+test 코드는 프로젝트/작업 상황에 따라서 잘 고려해서 작성해야한다.
 
 ### VScode Extensions
 <Jest> by Orta
