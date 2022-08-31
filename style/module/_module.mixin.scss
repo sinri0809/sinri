@@ -1,0 +1,46 @@
+// * 🦄️animation 
+@mixin animation ($delay, $duration, $name, $timefunction: initial, $fill: forwards) {
+  animation-fill-mode: $fill;
+  animation-name: $name;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-timing-function: $timefunction;
+}
+
+// * 🦄️keyframes 
+@mixin keyframe ($animation_name) {
+  @keyframes #{$animation_name} {
+    @content;
+  }
+}
+
+// * responsive
+// $desktop-max: ;
+// $desktop-mid: ;
+// $desktop-min: ;
+// $mobile-max: ;
+
+@mixin mobile {
+  @media screen and (min-width: #{$mobile-min}) and (max-width: #{$mobile-max}) {
+    @content;
+  }
+}
+
+@mixin desktop-max {
+  @media screen and (max-width: #{$desk-min}) {
+    @content;
+  }
+}
+
+@mixin mobile-max {
+  @media (max-width: #{$mobile-max}) {
+    @content;
+  }
+}
+
+@mixin mobile-min {
+  @media (max-width: #{$mobile-min}) {
+    @content;
+  }
+}

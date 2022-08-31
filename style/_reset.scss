@@ -1,23 +1,29 @@
-body{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline-style: none;
+}
 
-  // 초기화 
+body {
   user-select: text;
-  *::selection{
+
+  *::selection {
     background-color: $blue1;
     color: $white;
   }
 
-  input{
+  input {
     border: 0;
     background-color: transparent;
-    
-    &::placeholder{
+
+    &::placeholder {
       font-size: inherit;
       font-weight: inherit;
       color: inherit;
     }
 
-    &[type="checkbox"]{ 
+    &[type="checkbox"] {
       appearance: none;
       border-radius: 3px;
       border: 1px solid #D8D8D8;
@@ -25,25 +31,25 @@ body{
 
       transition: all 0.3s;
 
-      &:hover{
+      &:hover {
         border: 1px solid $color-2C99FF_azure;
       }
 
-      &:checked{
+      &:checked {
         border: 1px solid $color-2C99FF_azure;
       }
     }
   }
 
-  svg path{
+  svg path {
     transition: fill 0.12s;
   }
 
-  a{
+  a {
     text-decoration: none;
   }
 
-  textarea{
+  textarea {
     resize: none;
   }
 }
