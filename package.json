@@ -1,0 +1,25 @@
+{
+  "name": "sinri_library",
+  "version": "1.0.0",
+  "description": "## start-pack ###",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sinri0809/sinri.git"
+  },
+  "author": "sinri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sinri0809/sinri/issues"
+  },
+  "homepage": "https://github.com/sinri0809/sinri#readme",
+  "devDependencies": {
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-merge": "^5.8.0"
+  }
+}
