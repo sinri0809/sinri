@@ -1,0 +1,15 @@
+@mixin font-face($name, $file, $weight: normal, $style: normal) {
+  @font-face { 
+    font-family: "#{$name}"; 
+    src: url('../../public/asset/font/#{$file}.woff') format('truetype'); 
+    font-weight: $weight; 
+    font-style: $style; 
+  }
+} 
+
+@mixin style_font($weight: 400, $size: 18px, $line_height: 1, $color: black){
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line_height;
+  color: $color;
+}
