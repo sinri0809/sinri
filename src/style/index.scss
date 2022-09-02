@@ -1,22 +1,15 @@
 @import './modules';
 @import './reset';
 
+// tools
+@import './tools/btn';
+
 // theme
 @import './theme/theme';
 
 // pages
 @import './pages/home';
 
-
-:root{
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar{
-  width: 0;
-  height: 0;
-}
 
 .App{
   width: 100vw;
