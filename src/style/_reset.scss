@@ -1,11 +1,11 @@
 @import './modules';
 
-:root{
+:root {
   font-size: 10px;
   scroll-behavior: smooth;
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   width: 0;
   height: 0;
 }
@@ -33,7 +33,7 @@ body {
       color: inherit;
     }
 
-    &[type="checkbox"] {
+    &[type='checkbox'] {
       appearance: none;
       border-radius: 3px;
       // border: 1px solid #D8D8D8;
@@ -60,12 +60,13 @@ body {
     resize: none;
   }
 
-  button{
+  button {
     border: none;
     background: none;
   }
 
-  ul, li{
+  ul,
+  li {
     list-style: none;
   }
 }

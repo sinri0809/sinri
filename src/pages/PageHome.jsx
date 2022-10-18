@@ -1,12 +1,14 @@
-import React from "react";
+import React from 'react';
 
-import Header from "components/layout/Header";
+import Header from 'components/layout/Header';
 
 const PageHome = () => {
-  return <div className="home">
-    <Header />
-    home
-  </div>
-}
+  return (
+    <div className="home">
+      <Header />
+      home
+    </div>
+  );
+};
 
 export default PageHome;
