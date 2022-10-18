@@ -1,0 +1,24 @@
+node_modules
+public
+build
+.storybook/
+
+// setting files 
+*.json
+*.lock
+*.md
+
+// assets
+*.svg
+
+src/assets
+src/lang
+src/stories
+*.stories.jsx
+
+src/index.js
+
+*.test.js
+
+src/reportWebVitals.js
+src/setupTest.js
