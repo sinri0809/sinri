@@ -11,7 +11,7 @@ module.exports = {
   },
   devtool: 'inline-source-map', // error의 위치를 정확하게 보기 위해서 
   devServer: {
-    static: './dist'
+    static: './build'
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -22,7 +22,7 @@ module.exports = {
   output: {
     // filename: 'bundle.js',
     filename: '[name].bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
     clean: true,
     publicPath: '/', 
   },
