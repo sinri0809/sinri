@@ -1,6 +1,4 @@
 body {
-
-  // 초기화 
   user-select: text;
 
   *::selection {
@@ -34,10 +32,6 @@ body {
         border: 1px solid red;
       }
     }
-  }
-
-  svg path {
-    transition: fill 0.12s;
   }
 
   a {

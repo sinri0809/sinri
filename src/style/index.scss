@@ -1,5 +1,5 @@
 @import 'reset';
-// @import 'modules';
+@import 'module';
 
 ::-webkit-scrollbar {
   width: 0;
@@ -9,12 +9,4 @@
 :root {
   font-size: 10px;
   scroll-behavior: smooth;
-}
-
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
 }
