@@ -1,12 +1,7 @@
-@import 'reset';
 @import 'module';
+@import 'reset';
 
-::-webkit-scrollbar {
-  width: 0;
-  height: 0;
-}
+@import './components/common/btn';
+@import './components/common/icon';
 
-:root {
-  font-size: 10px;
-  scroll-behavior: smooth;
-}
+@import './components/layout/header';

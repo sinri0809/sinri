@@ -1,9 +1,19 @@
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+:root {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
 body {
   user-select: text;
 
   *::selection {
-    // background-color: $blue1;
-    // color: $white;
+    background-color: $blue1;
+    color: $white;
   }
 
   input {
