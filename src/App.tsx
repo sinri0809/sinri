@@ -1,9 +1,11 @@
 import React from 'react';
 
+import Router from 'router/Router';
+
 function App() {
   return (
     <div className="App">
-      <p>initialized</p>
+      <Router />
     </div>
   );
 }
