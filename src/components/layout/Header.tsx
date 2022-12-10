@@ -1,16 +1,8 @@
+import Nav from "./Nav";
+
 const Header = () => {
-  return <header>
-
-    <nav>
-      this is navigation
-      <ul>
-        <li></li>
-      </ul>
-    </nav>
-
-    <aside>
-      this is side
-    </aside>
+  return <header className="header">
+    <Nav />
   </header>
 }
 

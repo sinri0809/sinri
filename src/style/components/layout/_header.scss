@@ -1,0 +1,19 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: $header_height;
+  background-color: gainsboro;
+}
+
+.header {
+
+  nav ul {
+    height: $header_height;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+}
