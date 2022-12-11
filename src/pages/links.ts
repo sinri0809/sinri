@@ -1,6 +1,6 @@
 const links = {
   home: "/",
-  content: '/content',
+  board: '/board',
 }
 
 export default links;

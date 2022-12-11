@@ -7,3 +7,8 @@
 @import './components/layout/header';
 
 @import './pages/home';
+
+.App {
+  position: relative;
+  margin-top: $header_height;
+}
