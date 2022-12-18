@@ -25,7 +25,7 @@ const config = {
     commonjs(),
     resolve(),
   ],
-  external: ['react', 'react-dom', 'react-scripts']
+  // external: ['react', 'react-dom', 'react-scripts']
   // external : 외부에서 받고 싶은 모듈
 }
 
