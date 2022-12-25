@@ -20,10 +20,10 @@ svg path {
 
 // svg mask
 .example-wrapper {
-  mask: url(shape.svg);
+  // mask: url(shape.svg);
 }
 
 #example-bg {
-  background: white url(shape.svg) no-repeat center;
-  mix-blend-mode: screen;
+  // background: white url(shape.svg) no-repeat center;
+  // mix-blend-mode: screen;
 }
