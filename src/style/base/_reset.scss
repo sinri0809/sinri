@@ -11,6 +11,7 @@
 :root {
   font-size: 10px;
   scroll-behavior: smooth;
+  // scroll-behavior: unset;
 }
 
 /* reset user agent style */
@@ -20,6 +21,10 @@
   border: 0;
   box-sizing: border-box;
   vertical-align: baseline;
+
+  &::before, &::after{
+    box-sizing: border-box;
+  }
 }
 
 body {
@@ -31,13 +36,41 @@ ol {
   list-style: none;
 }
 
+li {
+  text-align: center;
+}
+
 textarea {
   resize: none;
 }
 
 a {
   text-decoration: none;
-  color: blueviolet;
+  color: inherit;
+
+  &:-webkit-any-link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:active {
+    text-decoration: none;
+    background-color: transparent;
+  }
+}
+
+p {
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+span,
+i {
+  display: inline-block;
 }
 
 img {
@@ -46,11 +79,16 @@ img {
 }
 
 button {
+  -webkit-appearance: button;
   border: none;
   background: none;
   cursor: pointer;
 }
 
+button,
+select {
+  text-transform: none;
+}
 
 input {
   border: 0;
@@ -62,8 +100,18 @@ input {
     color: inherit;
   }
 
+  &[type="search"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+  }
+
   &[type="checkbox"] {
     appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
     border-radius: 3px;
     border: 1px solid #D8D8D8;
     background-color: white;
@@ -76,6 +124,10 @@ input {
 
     &:checked {
       border: 1px solid red;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 }
@@ -112,4 +164,21 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+progress {
+  display: block;
+  overflow: hidden;
+  appearance: none;
+  -webkit-appearance: none;
+  vertical-align: center;
+  border: none;
+
+  &::-webkit-progress-bar {
+    background-color: white;
+  }
+
+  &::-webkit-progress-value {
+    background-color: red;
+  }
 }
