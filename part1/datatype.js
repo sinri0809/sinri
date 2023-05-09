@@ -14,7 +14,7 @@ console.log(arr2)
 const names = ['Lee', 'Kim', 'Park', 'Lee', 'Kim'];
 const namesSet = new Set(...names); // {"L", 'e'}
 const namesSet2 = new Set(names); // {'Lee', 'Kim', 'Park'}
-
+// 중복 제거하기
 const namesSet3 = Array.from(new Set(names)) // ['Lee', 'Kim', 'Park']
 const arrNamesSet2 = [...namesSet2]; //  ['Lee', 'Kim', 'Park']
 

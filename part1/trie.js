@@ -63,10 +63,15 @@ function main() {
 
   wordsTrie.insert('hihihi');
   wordsTrie.insert('asd');
+  wordsTrie.insert('asdadsas');
+  wordsTrie.insert('awerj');
+  wordsTrie.insert('2sdadsas');
   wordsTrie.insert('hia');
 
   wordsTrie.has('hia');
-  console.log(wordsTrie);
+  // console.log(wordsTrie);
+
+  wordsTrie.display();
 }
 
 main();

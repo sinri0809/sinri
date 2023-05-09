@@ -7,12 +7,12 @@ let arr = new Array(5).fill(0);
 //   return element + element;
 // }))
 
-// 빈 배열 크기 3
-console.log(Array(3))
+// 빈 배열, 크기 3
+console.log(Array(3)) // [ <3 empty items> ]
+console.log(Array.from({length: 3})) // [ undefined, undefined, undefined ]
+
 // 크기 10의 배열에 index 채워넣기 = 정수 배열 만들기
-console.log(Array.from({ length: 10 }, (element, index) => {
-  return index
-}))
+console.log(Array.from({ length: 10 }, (element, index) => index))
 
 console.log(
   Array
