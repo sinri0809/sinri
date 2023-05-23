@@ -14,6 +14,7 @@ class Queue {
   dequeue() {
     const value = this.queue[this.front];
     delete this.queue[this.front];
+    // delete - removes a property from an *object 
     this.front += 1;
     return value;
   }
@@ -25,4 +26,26 @@ class Queue {
   size() {
     return this.rear - this.front;
   }
+
+  display() {
+    console.log("queue size: " + this.size())
+
+    console.log("front: " + this.front)
+    this.queue.forEach((item) => {
+      if(item){
+        console.log(item)
+      }
+    })
+    console.log("rear: " + this.rear)
+  }
+}
+
+function main_queue() {
+  const q = new Queue();
+  q.enqueue(1);
+  q.enqueue(4);
+  q.enqueue(5);
+  q.dequeue();
+
+  q.display();
 }
