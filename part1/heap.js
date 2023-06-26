@@ -2,9 +2,17 @@
 // 완전이진트리를 기본으로 
 // 최대/최소 값을 빠르게 찾아내기 위해 고안된 자료구조
 // 부모 노드와 자식 노드사이에 대소관계가 성립
-
+// ------------------------------------------------------------------------------------------------------
 // Max heap 최대 힙
 // 부모노드가 자식노드보다 크다
+
+/** max heap structure
+ *       null
+ *        10 --- root
+ *       5  6
+ *      1 5
+ */
+
 class MaxHeap {
   constructor() {
     this.heap = [null];
@@ -12,13 +20,12 @@ class MaxHeap {
 
   push(value) {
     this.heap.push(value);
+
     let currentIndex = this.heap.length - 1;
     let parentIndex = Math.floor(currentIndex / 2);
 
     while (parentIndex !== 0 && this.heap[parentIndex] < value) {
-      const swapValue = this.heap[parentIndex];
-      this.heap[parentIndex] = value;
-      this.heap[currentIndex] = swapValue;
+      [this.heap[parentIndex], this.heap[currentIndex]] = [this.heap[currentIndex], this.heap[parentIndex]];
 
       currentIndex = parentIndex;
       parentIndex = Math.floor(currentIndex / 2);
@@ -30,7 +37,7 @@ class MaxHeap {
       return this.heap.pop();
     }
 
-    const returnValue = this.heap[1];
+    const rootValue = this.heap[1];
     this.heap[1] = this.heap.pop();
 
     let currentIndex = 1;
@@ -39,22 +46,18 @@ class MaxHeap {
 
     while (this.heap[currentIndex] < this.heap[leftIndex] ||
       this.heap[currentIndex] < this.heap[rightIndex]) {
-      if (this.heap[currentIndex] < this.heap[leftIndex]) {
-        const swapValue = this.heap[leftIndex];
-        this.heap[leftIndex] = this.heap[currentIndex];
-        this.heap[currentIndex] = swapValue;
-        currentIndex = leftIndex;
+      
+      if(this.heap[currentIndex] < this.heap[leftIndex]){
+        [this.heap[currentIndex], this.heap[leftIndex]] = [this.heap[leftIndex], this.heap[currentIndex]];
       } else {
-        const swapValue = this.heap[rightIndex];
-        this.heap[rightIndex] = this.heap[currentIndex];
-        this.heap[currentIndex] = swapValue;
-        currentIndex = rightIndex;
+        [this.heap[currentIndex], this.heap[rightIndex]] = [this.heap[rightIndex], this.heap[currentIndex]];
       }
+      
       leftIndex = currentIndex * 2
       rightIndex = leftIndex + 1
     }
 
-    return returnValue;
+    return rootValue;
   }
 
   print() {

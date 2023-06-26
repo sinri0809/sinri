@@ -1,6 +1,6 @@
 // 배열 크기가 무한정 늘어날 수 있는 단점 있음.
 
-class Queue {
+class LinearQueue {
   constructor() {
     this.queue = [];
     this.front = 0;
@@ -41,7 +41,7 @@ class Queue {
 }
 
 function main_queue() {
-  const q = new Queue();
+  const q = new LinearQueue();
   q.enqueue(1);
   q.enqueue(4);
   q.enqueue(5);
